@@ -1,1 +1,97 @@
-<h1>Write whatever you want here</h1>
+<!DOCTYPE html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<script src="/assets/jquery.js"></script>
+<style>
+body {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+  background: #e6eaf0;
+  background: #379 url("");
+  color: black;
+}
+button {
+  margin: 40px;
+}
+input {
+  font-size: 24px;
+}
+.fill {
+  color: purple;
+  border-bottom: 2px black solid;
+  font-family: 'Pacifico', cursive;
+  padding: 0 6px;
+  margin:4px;
+}
+.prompt {
+  margin: 30px 0px 0px 0px;
+  border: 8px solid orange;
+  border-radius: 20px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="prompt"></div>
+<button>Next</button>
+<script>
+// List of prompts for the user
+var prompts = [
+	'Type your name',
+	'Type an adjective',
+	'Type a noun',
+	'Type a verb',
+	'Type a noun',
+	'Type a verb',
+	'Type a verb',
+	'Type a adjective',
+	'Type a noun',
+	'type a noun',
+	'Type a verb',
+   ];
+
+var answers=[];
+// Keep track of current prompt we're on
+var currentPrompt = 0;
+
+// A function that will call the next prompt
+var nextPrompt = function() {
+  //if there's no answer in the form
+  if (currentPrompt != 0){
+    answers.push($('input').val());
+  }
+	// if there is a next prompt
+	if (currentPrompt < prompts.length) {
+		// put first prompt in all html elements with class 
+		$('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+		// move the next prompt into variable currentPrompt 
+		currentPrompt = currentPrompt + 1;
+	}
+	//or else if we're at the end of the array
+	else {
+		// put a new message into the html.
+		showFinal();
+	}
+}
+
+//puts user answers into html
+var showFinal = function() {
+  $('.prompt').html('This is the story about <span class="fill">'+answers[0]+'</span> and the <span class="fill">'+answers[1]+'</span> <span class="fill">'+answers[2]+'</span>. There was a girl named Rosalia, whose parents <span class="fill">'+answers[3]+'</span> in an car accident,when she was 10 years old. After that incident she stayed with her grandmother <span class="fill">'+answers[4]+'</span>. After 23 years later, she find a job. She always notices that the red cat in a the box. Day after day, whenever she goes to work always notice the cat <span class="fill">'+answers[5]+'</span> in the box. After that, she start bringning something for the red cat. One of her friend said," Hey, Rosalia...Wait up!.." Rosalia said," Hey, Alisa...What is going on? You are not going home?" Alisa said, "Why....you...alwayswalksofast?![she said it in a breathless way=>always walk so fast!]", Rosalia said, sorry for <span class="fill">'+answers[6]+'</span> fast." Alisa said, " Ok, ok discpline girl. Lets go for some coffee! You always say that "maybe next time" and I always wait for the next time! So, this is my opportunity to take you to the cafe. Lets go." "Hahaha...ok, ok..I am coming...Lets go. Well, I dont have much work left to do and since the weather is nice, lets go for shopping." said Rosalia. Alisa said, "Aye, lets go." A while ago....Rosalia asked to Alisa," Alisa do you want to come to my house. I want to show you something." Then, they hurried for going home. Rosalia said,"Look, I bought this <span class="fill">'+answers[7]+'</span> cat. Its not from the cat store. He was suffer outside and so, I thought to bring it in my house." Alisa said, "Awww...your cat is really so cute. Well, its good to have a pet in your house to spare time with it. Whats your cats name?", Rosalia said," I really didnt thought about the name. How about<span class="fill">'+answers[8]+'</span>", Alisa said, "Yeah...its classic and nice too. I think it will suit for the cat." Rosalia said, "What do you about your new? Nice huh!." Rosalia gently smlied at the cat and the cat said,"Meow", Alisa said, " Awwwe...its so cute let me take a pic of you", when Alisa carried the cat to take a pic, the cat just scratched hardly on her left hand. Alisa siad, "Well, I think your cat doesnt like strangers." Alisa said, "Hmph...I just want a pic from you......Well, I guess your <span class="fill">'+answers[9]+'</span> is really good." Rosalia said,"Hmm...I think so.." Alisa said,"Well, girll! You are lucky!" Rosalia said," Lucky? What do you mean by lucky?" Alisa said with an akward posture, "Girll! Seriously! Look...think a thief came into your house and the thief was packing your valuable thing!" Rosalia said,"Hey, hey...wha are you gettin into? Do you want to say he is enough to defeat a thief?" Alisa said, "Well, you can say that?! But look how hard he srcatched me that it almost bleeding and now I should go to the doc for check up." Rosalia said, "I think you are right." Alisa said, "Well, I gotta go to the medic for check up and today was the nicest day to spnd with you. Take care, bye! Bye kitty!" Rosalia said carring her cat, "Yeah, you too. Take care. Bye" Kitty said, "Meow" 1 week later, Rosalia meets her firend and run to her to give a hug."Hey, where you have been? I thought you got sick?" said Rosalia. Alisa saying, "Well, after the medic check up. I got a call from my parents to go back to my countryside for emergency and [cried voice] I tried to call you but I really didnt got a chance..!" Since from that day, they go to see the cat and <span class="fill">'+answers[10]+'</span> for shopping. One night she was late to go to home and she crossed the street correctly, but the car was coming so fast that the driver couldnt give break to the car eventhough there was red signal for the car and, she got in an accident which caused her to loos more blood from her body. The hospital nurses called her friend. Alisa took her cat who was outside from Rosalia room');
+  //and then hide the button
+  $('button').hide();
+}
+// run nextPrompt function when button is clicked
+$('button').click(function() {
+	nextPrompt();
+});
+
+// Show the first prompt as soon as js loads
+nextPrompt();
+</script>
+
+</body>
