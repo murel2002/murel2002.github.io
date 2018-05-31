@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+	 <script
+	 src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 30px 'Lobster', cursive;
+      line-height: 1.8;
+      color: #ff5273;
+  }
+  p {font-size: 20px;}
+  .margin {margin-bottom: 40px;}
+  .bg-1 { 
+      background-color: #ffb7c5; 
+      color: #ff5273;
+  }
+  .bg-2 { 
+      background-color: #BA55D3; 
+      color: #800080;
+  }
+  .bg-3 { 
+			padding: 0 0 10px 0;
+      border: none;
+      border-radius: 0;
+      background-color: #a9845e; 
+      color: #59392f ;
+  }
+  .bg-4 { 
+      background-color: #749a00 ; 
+      color: #4e6700;
+  }
+  .container {
+      padding: 20px 20px;
+  }
+  .container-fluid {
+      padding-bottom: 30px;
+  }
+  
+	
+  </style>
+</head>
+<body>
+
+
+		
+<!-- First Container -->
+<div id= "Who" class="bg-1">
+	<div class="container-fluid bg-1 text-center">
+  	<h3 class="margin">Who Am I?</h3>
+  	<img src="https://images-na.ssl-images-amazon.com/images/I/61zrPD9SMuL.jpg" class="img-thumbnail" 	 alt="Skura Tree" style="width:20%" width="50" height="50">
+  	<h3>I'm an Photographer!</h3>
+	</div>
+
+<!-- Second Container -->
+<div id= "What" class="bg-2">	
+	<div class="container-fluid bg-2 text-center">
+  	<h3 class="margin">What Can I Do?</h3>
+  	<p>I take pictures of many different things and my hobby is also taking pictures. I also love walking on the 	mountains. For example, hiking or traveling. Besides hiking and traveling, I like to draw sceneries!! </p>
+	</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Where I Work?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>I work in a Photo-Shop Department Services. Sometimes, I also go to photo muesume to donate photos for charity to help others. And another way is that, I also want to be famous aby taking amazing photos nd pictures.</p>
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/09/42/camera-1868773_960_720.jpg" class="img-thumbnail" style="width:70%" width="90" height="90" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Sometimes, I work alone because I want to be independent to take creative or amazing picture of the nature; and sometimes I go camping with my co-workers, spending times with my three friends nd taking pictures.</p>
+      <img src="https://i.pinimg.com/originals/2c/06/36/2c0636c627af10c4037e45c9b2964a59.jpg" class="img-thumbnail" style="width:50%" width="90" height="50" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Sometimes, I also dependently with my co-workers to take an picture of an amazing time because sometimes it becomes harder to take pictures alone and also travel alone is sometimes become dangerous.</p>
+      <img src="https://i.pinimg.com/originals/04/3e/74/043e749306e8306139eafd279760cf61.jpg" class="img-thumbnail" style="width:70%" width="90" height="90" alt="Image">
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>Thank you so much for your visitation!!:)</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Oh, visitors? Drop a note!:)</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>New York, USA</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 101010101</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: gmail@gmail.com</p>
+    </div>
+		    <div class="col-md-8">
+		<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+		<input name="skip_WhereToSend" type="hidden" value="your@email.com" />
+		<input name="skip_SnapHostID" type="hidden" value="P6MDFMZHHMAU" />
+		<input name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
+		<input name="skip_Subject" type="hidden" value="Contact Us Form" />
+		<input name="skip_ShowUsersIp" type="hidden" value="1" />
+		<input name="skip_SendCopyToUser" type="hidden" value="1" />
+		<script type="text/javascript">
+		function ValidateForm(frm) {
+if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = '' + obj.src;
+obj.src = '';
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0" width="600">
+<tr>
+<td><b>Name*:</b></td>
+<td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Phone number:</b></td>
+<td><input name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Email address*:</b></td>
+<td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Comments and questions*:</b></td>
+<td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
+</tr><tr>
+<td colspan="2" align="center"> <br />
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2" style="padding-bottom:10px;">
+<!-- Please check our ProCaptcha service which is ad-free:
+http://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+<a href="http://www.snaphost.com/captcha/" alt="captcha service" title="captcha service">
+captcha service</a></td></tr>
+<tr valign="top"><td> <i>Enter web form code*:</i>
+<input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
+</td><td>
+<a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
+style="margin-left:20px;"
+src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=P6MDFMZHHMAU&ImgType=2" /></a><br />
+<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
+</table> <br />
+* - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input name="skip_Submit" type="submit" value="Submit" />
+</td></tr>
+</table><br />
+</form>
+		</div>
+	</div>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Photography Theme Made By <a href="http://backcountryjourneys.com/?_vsrefdom=adwords&gclid=EAIaIQobChMIp46G2cSZ2wIVzQOGCh1JDwOBEAAYAiAAEgIRF_D_BwE">www.backcountryjourneys.com</a></p> 
+</footer>
+
+</body>
+</html>
