@@ -102,16 +102,16 @@
       <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 101010101</p>
       <p><span class="glyphicon glyphicon-envelope"></span>Email: gmail@gmail.com</p>
     </div>
-		    <div class="col-md-8">
-		<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
-		<input name="skip_WhereToSend" type="hidden" value="your@email.com" />
-		<input name="skip_SnapHostID" type="hidden" value="P6MDFMZHHMAU" />
-		<input name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
-		<input name="skip_Subject" type="hidden" value="Contact Us Form" />
-		<input name="skip_ShowUsersIp" type="hidden" value="1" />
-		<input name="skip_SendCopyToUser" type="hidden" value="1" />
-		<script type="text/javascript">
-		function ValidateForm(frm) {
+    <div class="col-md-8">
+<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+<input name="skip_WhereToSend" type="hidden" value="your@email.com" />
+<input name="skip_SnapHostID" type="hidden" value="P6MDFMZHHMAU" />
+<input name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
+<input name="skip_Subject" type="hidden" value="Contact Us Form" />
+<input name="skip_ShowUsersIp" type="hidden" value="1" />
+<input name="skip_SendCopyToUser" type="hidden" value="1" />
+<script type="text/javascript">
+function ValidateForm(frm) {
 if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
 if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
 if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
